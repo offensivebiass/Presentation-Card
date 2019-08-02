@@ -15,7 +15,7 @@ class PresentationCard extends HTMLElement {
 
     attributeChangedCallback(name, oldValue, newValue) {
         switch (name) {
-            case 'name':
+            case 'nombre':
                 this.myName = newValue
                 if (newValue === 'Alex') {
                     this.itsMe = true
@@ -59,7 +59,7 @@ class PresentationCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['name', 'lastname', 'email']
+        return ['nombre', 'lastname', 'email']
     }
 
 }
